@@ -11,8 +11,10 @@ import com.springboot.webflux.app.models.documents.Categoria;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.springboot.webflux.app.models.services.ProductoService;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@EnableEurekaClient
 @SpringBootApplication
 public class SpringBootWebFluxApiRestApplication implements CommandLineRunner {
 
